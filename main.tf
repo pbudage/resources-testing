@@ -5,6 +5,7 @@ provider "aws" {
 resource "aws_internet_gateway" "test-igw-iac-1" {
   tags = {
     Name = "test-iac-igw-1"
+    Test = "testing-iac"
   }
 }
 
