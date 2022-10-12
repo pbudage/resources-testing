@@ -2,9 +2,9 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_internet_gateway" "test-gateway" {
+resource "aws_internet_gateway" "test-iac-gateway" {
   tags = {
-    Name = "test-igw"
+    Name = "test-iac-igw"
   }
 }
 
@@ -13,6 +13,6 @@ resource "aws_vpc" "test-vpc" {
   instance_tenancy = "default"
 
   tags = {
-    Name = "test-vpc-drift"
+    Name = "test-vpc-iac"
   }
 }
